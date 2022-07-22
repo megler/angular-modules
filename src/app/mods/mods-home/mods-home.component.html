@@ -1,0 +1,12 @@
+<button (click)="onClick()">Show Modal</button>
+<app-modal (close)="onClick()" *ngIf="modalOpen">
+  <div modalTitle>We've auto-chosen a profile image for you.</div>
+  <p>
+    We've grabbed the following image from the
+    <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your registered e-mail
+    address.
+  </p>
+  <p>Is it okay to use this photo?</p>
+</app-modal>
+<app-divider>Accordian Component</app-divider>
+<app-accordian [items]="items"></app-accordian>
